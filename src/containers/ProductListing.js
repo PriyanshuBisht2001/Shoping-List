@@ -7,18 +7,19 @@ import ProductComponent from "./ProductComponent";
 const ProductPage = () => {
   const products = useSelector((state) => state.allProducts.products);
   const dispatch = useDispatch();
-  const fetchProducts = async () => {
-    const response = await axios
-      .get("https://fakestoreapi.com/products")
-      .catch((err) => {
-        console.log("Err: ", err);
-      });
-    dispatch(setProducts(response.data));
-  };
-
+  
   useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get("https://fakestoreapi.com/products");
+        dispatch(setProducts(response.data));
+      } catch (error) {
+        console.log("Error fetching products:", error);
+      }
+    };
+
     fetchProducts();
-  }, []);
+  }, [dispatch]);
 
   console.log("Products :", products);
   return (

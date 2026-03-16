@@ -15,21 +15,21 @@ const ProductDetail = () => {
   const dispatch = useDispatch();
   console.log(productId);
 
-  const fetchProductDetail = async (productId) => {
-    const response = await axios
-      .get(`https://fakestoreapi.com/products/${productId}`)
-      .catch((err) => {
-        console.log("Err", err);
-      });
-    dispatch(selectedProducts(response.data));
-  };
-
   useEffect(() => {
+    const fetchProductDetail = async (productId) => {
+      const response = await axios
+        .get(`https://fakestoreapi.com/products/${productId}`)
+        .catch((err) => {
+          console.log("Err", err);
+        });
+      dispatch(selectedProducts(response.data));
+    };
+
     if (productId && productId !== "") fetchProductDetail(productId);
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productId]);
+  }, [productId, dispatch]);
 
   return (
     <div className="ui container product-page">
