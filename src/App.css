@@ -7,6 +7,139 @@
   pointer-events: none;
 }
 
+.product-card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  padding:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.product-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* IMAGE FIX */
+.product-image{
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.product-image img{
+  max-height:180px;
+  max-width:100%;
+  object-fit:contain;
+}
+
+/* TEXT */
+.product-content{
+  padding:10px;
+  text-align:left;
+}
+
+.product-title{
+  font-size:15px;
+  font-weight:600;
+  height:40px;
+  overflow:hidden;
+}
+
+.product-category{
+  font-size:13px;
+  color:gray;
+}
+
+.product-price{
+  font-size:18px;
+  font-weight:bold;
+  color:#2185d0;
+}
+
+.product-link{
+  text-decoration:none;
+  color:black;
+}
+
+/* PRODUCT PAGE */
+.product-page{
+  margin-top:40px;
+}
+
+/* IMAGE BOX */
+.product-image-box{
+  background:#f7f7f7;
+  border-radius:12px;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-image-box img{
+  max-width:100%;
+  max-height:450px;
+  object-fit:contain;
+}
+
+/* DETAILS */
+.product-details{
+  padding-left:30px;
+}
+
+.product-title{
+  font-size:32px;
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+/* PRICE */
+.price-tag{
+  font-size:28px;
+  font-weight:bold;
+  color:#2185d0;
+  margin-bottom:15px;
+}
+
+/* CATEGORY */
+.category-tag{
+  display:inline-block;
+  padding:6px 14px;
+  background:#f1f1f1;
+  border-radius:6px;
+  margin-bottom:20px;
+  font-size:14px;
+  color:#555;
+}
+
+/* DESCRIPTION */
+.product-description{
+  font-size:15px;
+  line-height:1.6;
+  color:#444;
+  margin-bottom:25px;
+}
+
+/* BUTTON */
+.add-cart-btn{
+  background:#2185d0;
+  color:white;
+  border:none;
+  padding:12px 22px;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.add-cart-btn:hover{
+  background:#1678c2;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

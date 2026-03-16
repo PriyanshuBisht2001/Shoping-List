@@ -1,9 +1,8 @@
-import React from "react"
 import Header  from "./containers/Header";
 import { BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import  ProductListing  from "./containers/ProductListing";
 import  ProductDetail from "./containers/ProductDetail";
-// import "./App.css";
+import "./App.css";
 
 
 function App() {

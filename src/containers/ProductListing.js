@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import  {setProducts}  from "../redux/action/productAction";
+import { setProducts } from "../redux/products/productSlice";
 import ProductComponent from "./ProductComponent";
 
 const ProductPage = () => {
@@ -17,7 +17,7 @@ const ProductPage = () => {
   };
 
   useEffect(() => {
-    fetchProducts();  
+    fetchProducts();
   }, []);
 
   console.log("Products :", products);
@@ -27,6 +27,5 @@ const ProductPage = () => {
     </div>
   );
 };
-
 
 export default ProductPage;
