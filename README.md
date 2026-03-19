@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# 🛍️ E-Commerce Product Listing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18-blue)
+![Redux](https://img.shields.io/badge/Redux-State%20Management-purple)
+![API](https://img.shields.io/badge/API-FakeStore-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-## Available Scripts
+A modern **E-Commerce Product Listing Application** built using **React.js, Redux, and React Router**.
+This project demonstrates **state management, dynamic routing, API integration, and scalable component architecture**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 **Live Demo:**
+https://shoping-list-chi.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 📸 Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🏠 Product Listing Page
 
-### `npm run build`
+<img width="900" src="https://res.cloudinary.com/dui47pygp/image/upload/v1773657720/FakeHub-screenshot-1_vfmujk.png" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📦 Product Details Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="900" src="https://res.cloudinary.com/dui47pygp/image/upload/v1773657720/FakeHub-screenshot-2_ipfknm.png" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*(Replace with actual screenshots for best impact)*
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# ✨ Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* 🛒 Display all products from API
+* 🔍 View **detailed product information**
+* 🔗 Dynamic routing using **React Router**
+* ⚡ Centralized state management with **Redux**
+* 📦 Clean and reusable component structure
+* 🚀 Fast and responsive UI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🛠️ Tech Stack
 
-## Learn More
+| Technology                 | Purpose          |
+| -------------------------- | ---------------- |
+| React.js                   | Frontend library |
+| Redux                      | State management |
+| React Router               | Routing          |
+| Axios                      | API calls        |
+| FakeStore API              | Product data     |
+| CSS / Tailwind / Bootstrap | Styling          |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 📂 Project Structure
 
-### Code Splitting
+```id="w3k2pl"
+src/
+│
+├── components/
+│   ├── Header.js
+│   ├── ProductComponent.js
+│   ├── ProductListing.js
+│   └── ProductDetail.js
+│
+├── redux/
+│   ├── actions/
+│   ├── reducers/
+│   └── store.js
+│
+├── App.js
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+# ⚙️ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1️⃣ Clone the repository
 
-### Making a Progressive Web App
+```bash id="m4p2qs"
+git clone https://github.com/your-username/ecommerce-app.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 2️⃣ Navigate to project
 
-### Advanced Configuration
+```bash id="g1x8zn"
+cd ecommerce-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 3️⃣ Install dependencies
 
-### Deployment
+```bash id="lp9v0d"
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 4️⃣ Run the app
 
-### `npm run build` fails to minify
+```bash id="t3k7bc"
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 5️⃣ Open in browser
+
+```id="y7u3qw"
+http://localhost:3000
+```
+
+---
+
+# 🔗 API Used
+
+* Fake Store API
+  https://fakestoreapi.com/
+
+---
+
+# 📈 Future Improvements
+
+* 🛍️ Add cart functionality
+* ❤️ Wishlist feature
+* 🔐 Authentication system
+* 💳 Payment integration
+* 📱 Full mobile responsiveness
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
+# 👨‍💻 Author
+
+**Priyanshu Bisht**
+
+🔗 GitHub:
+https://github.com/priyanshubisht2001
+
+---
+
+# ⭐ Support
+
+If you like this project, please **give it a star ⭐** on GitHub!
+
+---
+
+# 💡 Recruiter Note
+
+This project demonstrates:
+
+✔ Scalable React architecture
+✔ Redux state management
+✔ API integration
+✔ Clean code practices
+✔ Component reusability
